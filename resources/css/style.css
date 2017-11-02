@@ -1,0 +1,246 @@
+html{
+  font-family: Helvetica;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+div{
+  display: block;
+}
+
+body {
+    line-height: 1.4rem;
+}
+
+/* header */
+header{
+  background: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.container{
+  max-width: 960px;
+  margin: auto;
+}
+
+.mobile{
+  display: none;
+}
+
+nav{
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav div{
+  display: flex;
+  align-items: center;
+}
+
+nav img{
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+ul li{
+  display: inline;
+  padding-right: 2rem;
+}
+
+header .flex{
+  justify-content: flex-end;
+}
+
+.flex{
+  display: flex;
+}
+
+.main-banner{
+  background-color: white;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  line-height: 1.2;
+}
+
+.main-banner h1{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* services */
+.services{
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  max-height: 8rem;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.service img.paper{
+  width: 3.5rem;
+}
+
+.service img{
+  max-width: 5rem;
+  margin-bottom: 1rem;
+}
+
+/* info */
+.info{
+  display: flex;
+  justify-content: center;
+  margin: 3rem;
+}
+
+.info h3{
+  width: 10rem;
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.philosophy{
+  width: 35%;
+  padding-right: 5%;
+}
+
+.appointments{
+  width: 35%;
+}
+
+/* footer */
+.footer{
+  background-color: azure;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+}
+
+.footer img{
+  height: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px){
+  body{
+    width: 100%;
+  }
+
+  header{
+    height: 22rem;
+    background-position: 20%;
+  }
+
+  .main-banner h1{
+    font-size: 1.33rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .main-banner{
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+}
+
+/* mobile (portrait) ----------- */
+@media only screen and (max-width : 768px){
+  body{
+    width: 100%;
+  }
+
+  .container span {
+    display: none;
+  }
+
+  header{
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .menu{
+    visibility: hidden;
+  }
+
+  .mobile{
+    visibility: visible;
+  }
+
+  .main-banner{
+    width: 100%;
+    margin: auto;
+    margin-top: 9rem;
+  }
+
+  .main-banner h1{
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4.77rem;
+    padding-bottom: 5.77rem;
+  }
+
+  .service p{
+    font-size: 0.77rem;
+  }
+
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .philosophy h3{
+    width: 100%
+    margin: auto;
+    }
+
+  .info p{
+  font-size: 0.77rem;
+  padding-bottom: 4rem;
+  }
+
+  .footer span{
+    display: none;
+}
+
+}
